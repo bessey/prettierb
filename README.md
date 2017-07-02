@@ -12,6 +12,5 @@ See [`test.rb`](./test.rb) and [`test-formatted.rb`](./test-formatted.rb) to see
 Well, a lot, but most importantly...
 
 - (Some) whitespace preservation, should be able to leave one newline between lines when desired.
-- Comment preservation.
 - Line length configuration, long lines should be wrapped, and perhaps method chains longer than X should always be broken into multiline.
 - Array literal preservation / enforcement (`%w[a]` should not be converted to `["a"]`, but perhaps the reverse should be enforced?)

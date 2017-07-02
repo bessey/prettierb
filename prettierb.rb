@@ -18,8 +18,8 @@ class PrettieRB
   def format
     source = File.read(path)
 
-    ast = Parser::CurrentRuby.parse(source)
-    formatted = Unparser.unparse(ast)
+    ast, comments = Parser::CurrentRuby.parse_with_comments(source)
+    formatted = Unparser.unparse(ast, comments)
     return puts formatted if debug
     file = File.new(output_path, "w")
     file.write(formatted)
