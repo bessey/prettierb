@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+require_relative "../prettierb"
+
+path = ARGV[0]
+if path
+  PrettieRB.new(path).format
+else
+  puts "Usage:"
+  puts "prettierb ./test.rb"
+  exit
+end
