@@ -2,7 +2,7 @@
 
 Formats Ruby code consistently every time, no more arguining about style guides and (formatting) Rubocops. Works by passing the source file into AST and then emitting a de-parsed version from there.
 
-This is totally just an experimental scratchpad right now!
+This is totally just an experimental scratchpad right now! I'm literally just running [parser](https://github.com/whitequark/parser) followed by [unparser](https://github.com/mbj/unparser), with surprisingly good results.
 
 See [`test.rb`](./test.rb) and [`test-formatted.rb`](./test-formatted.rb) to see how this currently functions when run with:
 
